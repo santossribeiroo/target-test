@@ -28,5 +28,7 @@ const handleData = (data) => {
     average = normalizeNumbers.format(average);
     greaterAverage = greaterAverage.map((number) => normalizeNumbers.format(number),);
     total.lastChild.textContent = sum;
-    
-}
+    dayMost.lastChild.textContent = highest;
+    dayLeast.lastChild.textContent = lowest;
+    monthlyAvg.children[0].textContent = greaterAverage.length;
+};
